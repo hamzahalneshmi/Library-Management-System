@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19D66F08-712B-4D24-80EF-22C5FBE7117D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>The_library_project</RootNamespace>
+    <AssemblyName>The library project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Dakirby309-Windows-8-Metro-Folders-OS-Libraries-alt-Metro.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authers.designer.cs">
+      <DependentUpon>Authers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book.Designer.cs">
+      <DependentUpon>Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrowing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrowing.designer.cs">
+      <DependentUpon>Borrowing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categories.designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditCoustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCoustomer.Designer.cs">
+      <DependentUpon>EditCoustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID.Designer.cs">
+      <DependentUpon>ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Job.Designer.cs">
+      <DependentUpon>Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publoshing_house.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publoshing_house.Designer.cs">
+      <DependentUpon>Publoshing_house.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repAuther.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repAuther.Designer.cs">
+      <DependentUpon>repAuther.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repBook.Designer.cs">
+      <DependentUpon>repBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repCatagourise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repCatagourise.Designer.cs">
+      <DependentUpon>repCatagourise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repCoustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repCoustomers.Designer.cs">
+      <DependentUpon>repCoustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="repPubloshing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="repPubloshing.Designer.cs">
+      <DependentUpon>repPubloshing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement.designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authers.resx">
+      <DependentUpon>Authers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book.resx">
+      <DependentUpon>Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrowing.resx">
+      <DependentUpon>Borrowing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories.resx">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCoustomer.resx">
+      <DependentUpon>EditCoustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID.resx">
+      <DependentUpon>ID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Job.resx">
+      <DependentUpon>Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Publoshing_house.resx">
+      <DependentUpon>Publoshing_house.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repAuther.resx">
+      <DependentUpon>repAuther.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repBook.resx">
+      <DependentUpon>repBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repCatagourise.resx">
+      <DependentUpon>repCatagourise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repCoustomers.resx">
+      <DependentUpon>repCoustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repPubloshing.resx">
+      <DependentUpon>repPubloshing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dakirby309-Windows-8-Metro-Folders-OS-Libraries-alt-Metro.ico" />
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Image\13741907243.jpg" />
+    <Content Include="Image\702.jpg" />
+    <Content Include="Image\Aha-Soft-Standard-Portfolio-About.ico" />
+    <Content Include="Image\Awicons-Vista-Artistic-Search.ico" />
+    <Content Include="Image\Custom-Icon-Design-Flatastic-8-Refresh.ico" />
+    <Content Include="Image\Dakirby309-Windows-8-Metro-Apps-Calculator-Metro.ico" />
+    <Content Include="Image\Dakirby309-Windows-8-Metro-Folders-OS-Libraries-alt-Metro.ico" />
+    <Content Include="Image\decalogue-background.jpg" />
+    <Content Include="Image\Double-J-Design-Ravenna-3d-Book.ico" />
+    <Content Include="Image\Folders-OS-Libraries-alt-Metro-icon.png" />
+    <Content Include="Image\Guillendesign-Variations-1-Notes-2.ico" />
+    <Content Include="Image\Guillendesign-Variations-2-Backup-2.ico" />
+    <Content Include="Image\Guillendesign-Variations-2-Backup.ico" />
+    <Content Include="Image\HD-Library-Pictures.jpg" />
+    <None Include="Resources\702.jpg" />
+    <None Include="Resources\home.png" />
+    <None Include="Image\hwaml.com_1336311438_852.jpg" />
+    <Content Include="Image\home.png" />
+    <Content Include="Image\Hopstarter-Book-Things-Book.ico" />
+    <Content Include="Image\Icojam-Blue-Bits-Picture-add.ico" />
+    <Content Include="Image\Icojam-Blue-Bits-Picture-delete.ico" />
+    <Content Include="Image\Icojam-Blue-Bits-User-add.ico" />
+    <Content Include="Image\library %281%29.jpg" />
+    <Content Include="Image\library photo.jpg" />
+    <Content Include="Image\library.jpg" />
+    <Content Include="Image\NOAO_Library_Stacks.jpg" />
+    <Content Include="Image\Oxygen-Icons.org-Oxygen-Actions-application-exit.ico" />
+    <Content Include="Image\Oxygen-Icons.org-Oxygen-Actions-help-about.ico" />
+    <Content Include="Image\Oxygen-Icons.org-Oxygen-Actions-window-close.ico" />
+    <Content Include="Image\Turbomilk-Livejournal-10-Pencil.ico" />
+    <None Include="Resources\Folders-OS-Libraries-alt-Metro-icon.png" />
+    <None Include="Resources\Dakirby309-Windows-8-Metro-Folders-OS-Libraries-alt-Metro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
