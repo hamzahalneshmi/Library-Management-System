@@ -11,7 +11,7 @@ The Library Management System is a comprehensive software solution designed to s
   - Update book information, including availability status and location.
   - Search for books using various criteria such as title, author, or genre.
 
-- **Patron Management:**
+- **Patron Management:** 
   - Add and edit patron information, including name, contact details, and membership status.
   - View patron borrowing history, including due dates and fines.
 
