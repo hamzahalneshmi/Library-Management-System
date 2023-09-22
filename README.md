@@ -5,7 +5,7 @@
 The Library Management System is a comprehensive software solution designed to streamline and enhance the operations of libraries. This system is built using C# for the frontend and MySQL for the backend database. It offers a range of features to efficiently manage books, patrons, and library transactions.
 
 ## Features
-
+ 
 - **Book Management:**
   - Add new books to the library catalog with details like title, author, genre, and ISBN.
   - Update book information, including availability status and location.
